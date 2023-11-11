@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./../css/reset.css">
+    <link rel="stylesheet" href="./../css/estilodoform.css">
+</head>
+
+<body>
+    <h1>Formulário do Torcedor</h1>
+    <form action="formulario.php" method="">
+
+        <fieldset>
+
+            <legend>Dados do Torcedor</legend>
+
+            <div class="elemento-form">
+
+                <label for="nome-front"> Nome: </label>
+                <input type="text" name="nome-back" id="nome-front" placeholder="Digite seu nome aqui" required>
+
+            </div>
+
+            <div class="elemento-form">
+
+                <label for="idade-front"> Idade: </label>
+                <input type="number" name="idade-back" id="idade-front" max="130" min="18">
+
+            </div>
+
+            <div class="elemento-form">
+
+                <label for="ultima-partida-front">Última partida que viu do seu time foi em</label>
+                <input type="date" name="data-ultima-partida" id="ultima-partida-front">
+
+            </div>
+
+            <div class="elemento-form">
+
+                <label for="email-front">Email</label>
+                <input type="email" name="email" id="email-front" required>
+
+            </div>
+
+            <div class="elemento-form">
+
+                <label for="">Gênero</label>
+
+                <br>
+
+                <input type="radio" name="genero" id="genero-mas-front" value="Masculino">
+                <label for="genero-mas-front">Masculino</label>
+                <br>
+
+                <input type="radio" name="genero" id="genero-fem-front" value="Feminino">
+                <label for="genero-fem-front">Feminino</label>
+                <br>
+
+                <input type="radio" name="genero" id="genero-mas-front" value="Indefinido">
+                <label for="genero-mas-front">Indefinido</label>
+                <br>
+
+                <div>
+                    <label>Opções:</label>
+                    <br>
+                    <input type="checkbox" name="socio-torcedor" id="socio-torcedor-front">
+                    <label for="socio-torcedor-front"> Possuo cartão de sócio torcedor </label>
+                    <br>
+                    <input type="checkbox" name"frequencia-estadio" id="frequencia-estadio-front">
+                    <label for="frenquencia-estadio-front">Vou ao estádio pelo menos uma vez por mês</label>
+                </div>
+
+                <div class="elemento-form">
+                    <label for=""></label>
+                    <select name="time" id="time-front">
+                        <option>Escolha seu time...</option>
+                        <option value="spo">São Paulo</option>
+                        <option value="san">Santos</option>
+                        <option value="cor">Corinthians</option>
+                        <option value="pal">Palmeiras</option>
+                        <option value="fla">Flamengo</option>
+                        <option value="flu">Fluminense</option>
+                        <option value="bot">Botafogo</option>
+                        <option value="vas">Vasco</option>
+                        <option value="cru">Cruzeiro</option>
+                        <option value="Atl">Atletico MG</option>
+                        <option value="gre">Grêmio</option>
+                        <option value="int">Internacional</option>
+                        <option value="bah">Bahia</option>
+                        <option value="vit">Vitoria BA</option>
+                        <option value="ath">Athletico PR</option>
+                        <option value="ctb">Coritiba</option>
+                        <option value="bgt">Bragantino</option>
+                        <option value="spt">Sport Recife</option>
+                        <option value="nau">Náutico</option>
+                        <option value="juv">Juventude</option>
+                        <option value="cri">Criciuma</option>
+                        <option value="cha">Chapecoense</option>
+                        <option value="gua">Guarani</option>
+                        <option value="pon">Ponte Preta</option>
+                        <option value="por">Portuguesa</option>
+                        <option value="pts">Portuguesa Santista</option>
+                        <option value="for">Fortaleza</option>
+                        <option value="cea">Ceará</option>
+                        <option value="fer">Ferroviária</option>
+                        <option value="bra">Brasiliense</option>
+                        <option value="fig">Figueirense</option>
+                        <option value="ava">Avaí</option>
+                        <option value="jvt">Juventus</option>
+                        <option value="mar">Marília</option>
+                        <option value="jab">Jabaquara</option>
+                    </select>
+                </div>
+                <div class="elemento-form">
+
+                    <br>
+                    <label for="satisfacao-font">Nivel de satisfação com seu time: </label>
+                    <br>
+                    <input type="range" name="satisfacao" id="satisfacao-front" min="1" max="10" value="5">
+
+                </div>
+
+                <div class="elemento-form">
+
+                    <label for="sugestoes-front">Deixe aqui suas sugestões: </label>
+                    <br>
+                    <textarea name="sugestoes" id="sugestoes-front" cols="30" rows="8"
+                        placeholder="sugestoes"></textarea>
+
+                </div>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Dados do seu Prêmio</legend>
+
+            <div class="elemento-form">
+                <label for=""></label>
+                <select name="time" id="time-front">
+                    <option>Escolha seu time...</option>
+                    <option value="bar">Barcelona</option>
+                    <option value="boc">Boca juniors</option>
+                    <option value="riv">River Plate</option>
+                    <option value="rea">Real Madrid</option>
+                    <option value="aja">Ajax</option>
+                    <option value="che">Chelsea</option>
+                    <option value="liv">Liverpool</option>
+                    <option value="mil">Milan</option>
+                    <option value="juv">Juventus</option>
+                    <option value="ben">Benfica</option>
+                    <option value="por">Porto</option>
+                    <option value="nap">Napoli</option>
+                    <option value="bra">Brasil</option>
+                    <option value="arg">Argentina</option>
+                    <option value="hol">Holanda</option>
+                    <option value="fra">França</option>
+                    <option value="bel">Belgica</option>
+                    <option value="ing">Inglaterra</option>
+                    <option value="nor">Noruega</option>
+                    <option value="uru">Uruguai</option>
+                </select>
+            </div>
+           
+            <div>
+                <label>Opções:</label> Qual final internacional gostaria de assistir ?
+                <br>
+                <input type="checkbox" name="UEFA" id="UEFA-front">
+                <label for="socio-torcedor-front"> UEFA </label>
+                <br>
+                <input type="checkbox" name" LIBERTADORES " id=" LIBERTADORES -front">
+                <label for="frenquencia-estadio-front">LIBERTADORES </label>
+                <br>
+                <input type="checkbox" name" COPA DO MUNDO " id=" COPA DO MUNDO -front">
+                <label for="frenquencia-estadio-front">COPA DO MUNDO </label>
+            </select>
+            </div>
+
+        </fieldset>
+
+        <div class="elemento-form">
+
+            <input type="reset" value="Limpar Formulário">
+            <input type="submit" value="Enviar">
+
+        </div>
+
+
+
+    </form>
+
+</body>
+
+</html>
